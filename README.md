@@ -12,4 +12,13 @@ This project was created using `bun init` in bun v1.2.0. [Bun](https://bun.sh) i
 
 3. You're on roll now.
 
-Open browser http://localhost:8000 (for build target browser) or execute `bun run out/me/main.js` (for build target node) to connect to nrepl server.
+Open browser http://localhost:8000 (for build target browser) or execute `bun run out/me/main.js` (for build target node) to connect nrepl client (emacs) to the runtime (browser or bun).
+
+
+## REFERENCES
+
+- https://shadow-cljs.github.io/docs/UsersGuide.html
+- https://github.com/amqp-node/amqplib
+- https://node-postgres.com/
+- https://effect.website/
+- https://date-fns.org/
