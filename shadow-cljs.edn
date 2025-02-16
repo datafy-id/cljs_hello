@@ -5,7 +5,11 @@
   "src/test"]
 
  :dependencies
- []
+ [[com.github.pkpkpk/cljs-node-io "2.0.339"]
+  [missionary/missionary "b.43"]
+  [cljs-bean/cljs-bean "1.9.0"]
+  [applied-science/js-interop "0.4.2"]
+  [com.hyperfiddle/rcf "20220926-202227"]]
 
  :dev-http {8000 "public"}
 
