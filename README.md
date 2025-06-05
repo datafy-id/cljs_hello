@@ -14,6 +14,26 @@ This project was created using `bun init` in bun v1.2.0. [Bun](https://bun.sh) i
 
 Open browser http://localhost:8000 (for build target browser) or execute `bun run out/me/main.js` (for build target node) to connect nrepl client (emacs) to the runtime (browser or bun).
 
+From cider cljs repl, we can switch to its sibling clojure repl with: `M-x cider-connect-sibling-clj`.
+
+From within clojure repl, we can compile, watch etc like this:
+
+```clojure
+;; Compile
+(shadow.cljs.devtools.api/compile :cli)
+
+;; Watch
+(shadow.cljs.devtools.api/watch :cli)
+
+;; Unwatch
+(shadow.cljs.devtools.api/stop-worker :cli)
+
+;; Switch / enter the cljs repl
+(shadow.cljs.devtools.api/node-repl {:build-id :cli})
+
+;; Quit from cljs repl
+:cljs/quit
+```
 
 ## REFERENCES
 
