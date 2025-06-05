@@ -2,18 +2,18 @@
   "name": "cljs_hello",
   "module": "index.ts",
   "devDependencies": {
-    "@types/bun": "^1.2.2",
-    "shadow-cljs": "^2.28.20"
+    "@types/bun": "^1.2.15",
+    "shadow-cljs": "^3.1.5"
   },
   "peerDependencies": {
-    "typescript": "^5.7.3"
+    "typescript": "^5.8.3"
   },
   "type": "module",
   "dependencies": {
-    "amqplib": "^0.10.5",
+    "amqplib": "^0.10.8",
     "date-fns": "^4.1.0",
     "date-fns-tz": "^3.2.0",
-    "effect": "^3.13.0",
-    "pg": "^8.13.3"
+    "effect": "^3.16.3",
+    "pg": "^8.16.0"
   }
 }
