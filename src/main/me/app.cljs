@@ -12,6 +12,9 @@
 (comment
   (def date (js/Date. "2025-02-12T08:00:00Z"))
 
+  (js/Object.keys df)
+  (-> (df/constructNow) (df/addDays 7))
+
   (dfz/formatInTimeZone date "Asia/Jakarta" "yyyy-MM-dd HH:mm:ssXXX")
   (dfz/formatInTimeZone date "+08" "yyyy-MM-dd HH:mm:ssXXX")
   (dfz/formatInTimeZone date "UTC" "yyyy-MM-dd HH:mm:ssXXX")
@@ -27,6 +30,4 @@
 
   (dfz/fromZonedTime "2025-02-12T08:00" "+07") ;; interpreted as in +7 then converted to UTC
 
-
-
-  )
+  ,)
