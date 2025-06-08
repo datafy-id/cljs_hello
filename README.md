@@ -35,6 +35,21 @@ From within clojure repl, we can compile, watch etc like this:
 :cljs/quit
 ```
 
+## Tailwind CSS
+
+Run the following in seperate terminal:
+
+```bash
+bun x @tailwindcss/cli --watch -o ./public/css/style.css
+```
+
+As of tailwindcss v4, it will automatically scan our source files (e.g. all files except ignored by .gitignore). It will detect the class names defined in uix component as shown below:
+
+```clojure
+(defui button [{:keys [on-click children]}]
+  ($ :button.border.py-1.px-4.rounded-md {:on-click on-click} children))
+```
+
 ## REFERENCES
 
 - https://shadow-cljs.github.io/docs/UsersGuide.html
@@ -42,3 +57,4 @@ From within clojure repl, we can compile, watch etc like this:
 - https://node-postgres.com/
 - https://effect.website/
 - https://date-fns.org/
+- https://github.com/pitch-io/uix

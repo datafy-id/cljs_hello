@@ -9,7 +9,9 @@
   [missionary/missionary "b.45"]
   [cljs-bean/cljs-bean "1.9.0"]
   [applied-science/js-interop "0.4.2"]
-  [com.hyperfiddle/rcf "20220926-202227"]]
+  [com.hyperfiddle/rcf "20220926-202227"]
+  [com.pitch/uix.core "1.4.4"]
+  [com.pitch/uix.dom "1.4.4"]]
 
  :dev-http {8000 "public"}
 

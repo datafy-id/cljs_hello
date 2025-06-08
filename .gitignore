@@ -1,8 +1,9 @@
 .clj-kondo
 .shadow-cljs
 public/assets/app
+public/css/style.css
 out
-
+.#*
 
 
 # Based on https://raw.githubusercontent.com/github/gitignore/main/Node.gitignore
