@@ -11,7 +11,7 @@
   "Hello world!")
 
 (defui button [{:keys [on-click children]}]
-  ($ :button.border.py-1.px-4.rounded-md {:on-click on-click} children))
+  ($ :button.btn.btn-primary {:on-click on-click} children))
 
 (defui app []
   (let [[state set-state!] (uix.core/use-state 0)]

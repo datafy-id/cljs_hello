@@ -4,6 +4,7 @@
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.8",
     "@types/bun": "^1.2.15",
+    "daisyui": "^5.0.43",
     "shadow-cljs": "^3.1.5",
     "tailwindcss": "^4.1.8"
   },

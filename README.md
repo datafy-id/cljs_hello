@@ -37,10 +37,22 @@ From within clojure repl, we can compile, watch etc like this:
 
 ## Tailwind CSS
 
+Install the npm deps:
+
+```bash
+bun add --dev tailwindcss @tailwindcss/cli
+```
+
+Create input css file, e.g. `./src/css/style.css`.
+
+```
+@import "tailwindcss";
+```
+
 Run the following in seperate terminal:
 
 ```bash
-bun x @tailwindcss/cli --watch -o ./public/css/style.css
+bun x @tailwindcss/cli -i ./src/css/style.css -o ./public/css/style.css --watch
 ```
 
 As of tailwindcss v4, it will automatically scan our source files (e.g. all files except ignored by .gitignore). It will detect the class names defined in uix component as shown below:
@@ -49,6 +61,22 @@ As of tailwindcss v4, it will automatically scan our source files (e.g. all file
 (defui button [{:keys [on-click children]}]
   ($ :button.border.py-1.px-4.rounded-md {:on-click on-click} children))
 ```
+
+### DaisyUI
+
+To use daisyui, simply install and use it.
+
+```bash
+bun add --dev daisyui
+```
+
+Use the plugin in input css file (`./src/css/style.css`).
+
+```
+@import "tailwindcss";
+@plugin "daisyui";
+```
+
 
 ## REFERENCES
 
